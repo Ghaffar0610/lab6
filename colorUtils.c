@@ -31,7 +31,13 @@ int toGrayScale(int *r, int *g, int *b, Mode mode) {
     *r = *g = *b = round(0.21 * *r + 0.72 * *g + 0.07 * *b);
   }
 }
+int checkSepia(float value){
+  return (value < 255) ? value : 255;
+}
 
-int toSepia(int *r, int *g, int *b) {
+Error toSepia(int *r, int *g, int *b) {
   //TODO: implement
+ if(r == NULL || g == NULL || b == NULL){
+    return ERROR_PRESENT;
+}
 }
