@@ -1,4 +1,5 @@
-
+#ifndef MODE_H
+#define MODE_H
 #ifndef MODE_H
 #define MODE_H
 
@@ -7,6 +8,12 @@ typedef enum {
   LIGHTNESS,
   LUMINOSITY
 } Mode;
+
+
+typedef enum {
+  NO_ERROR = 0,
+  ERROR_PRESENT,
+}Error;
 
 #endif /* MODE_H */
 
